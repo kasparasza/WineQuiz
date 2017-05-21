@@ -1,0 +1,15 @@
+<resources>
+    <!-- Dimensions of TextViews & text font-->
+    <dimen name="height_of_question_text_landscape">40dp</dimen>
+    <dimen name="height_of_question_text_landscape_02">60dp</dimen>
+
+    <!-- Dimensions of ImageViews view -->
+    <!-- Landscape layout -->
+    <dimen name="imageViewSize_land">216dp</dimen>
+
+    <!-- Dimensions of control buttons -->
+    <!-- Landscape layout -->
+    <dimen name="controlButtonDimension_01_land">144dp</dimen>
+    <dimen name="controlButtonDimension_02_land">56dp</dimen>
+
+</resources>

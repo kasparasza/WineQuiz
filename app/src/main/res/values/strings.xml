@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Wine Quiz</string>
+
+    <!-- Strings used in welcome screen -->
+    <string name="welcome_text_01">Welcome to Wine Quiz!</string>
+    <string name="welcome_text_02">"In vinum veritas!"</string>
+    <string name="welcome_text_03">The following 9 questions will check your knowledge about wine
+    and its drinking culture. Additional reading material will provide some broader knowledge.
+    </string>
+    <string name="welcome_text_04">"Ready? Let's start!"</string>
+
+    <!-- Strings used in Q1 -->
+    <string name="question_01">Question 1</string>
+    <string name="question_01_text">Wine glasses are diverse and sometimes it can be tough
+        to figure out what is appropriate for what. Which one is the right glass for white wine?
+        </string>
+
+    <!-- Strings used in Q2 -->
+    <string name="question_02">Question 2</string>
+    <string name="question_02_text">According to etiquette, the amount of wine one pours into a glass
+        depends on its type. Which glass is incorrectly filled?</string>
+
+    <!-- Strings used in Q3 -->
+    <string name="question_03">Question 3</string>
+    <string name="question_03_text">Wine has a complex chemistry that changes with temperature and
+        environment. What temperature do you think is right for sparkling wine?</string>
+    <string name="editTextHint_Q3">number between 0 and 20</string>
+
+    <!-- Strings used in Q4 -->
+    <string name="question_04">Question 4</string>
+    <string name="question_04_text">If you pair wine with a meal, it is good to know what type
+        to choose. Else, you could spoil both treats. What would you choose for beef?</string>
+    <string name="question_04_answer_A">dry white wine</string>
+    <string name="question_04_answer_B">semi-dry white wine</string>
+    <string name="question_04_answer_C">dry red wine</string>
+    <string name="question_04_answer_D">semi-dry red wine</string>
+
+    <!-- Strings used in Q5 -->
+    <string name="question_05">Question 5</string>
+    <string name="question_05_text">Mr. Churchill was famous for his irony. Complete
+        one of his quotes: “Remember, gentlemen, it’s not just {..gap..} we are fighting for!
+        It’s Champagne! “</string>
+    <string name="question_05_answer_A">wine</string>
+    <string name="question_05_answer_B">victory</string>
+    <string name="question_05_answer_C">posterity</string>
+    <string name="question_05_answer_D">France</string>
+
+    <!-- Strings used in Q6 -->
+    <string name="question_06">Question 6</string>
+    <string name="question_06_text">For red wine it is advisable to “let it breath” a bit to allow
+        oxidation process shape full bouquet of its odor. Approximately for how many minutes?</string>
+    <string name="editTextHint_Q6">number between 0 and 60</string>
+
+    <!-- Strings used in Q7 -->
+    <string name="question_07">Question 7</string>
+    <string name="question_07_text">Choosing a wine to go with a desert is sometimes tricky. Which
+        wine can friend with a chocolate dessert?</string>
+    <string name="question_07_answer_A">Dry sparkling rose</string>
+    <string name="question_07_answer_B">Tawny port</string>
+    <string name="question_07_answer_C">Riesling</string>
+    <string name="question_07_answer_D">Sweet Cabernet Sauvignon</string>
+
+    <!-- Strings used in Q8 -->
+    <string name="question_08">Question 8</string>
+    <string name="question_08_text">So finally you uncorked that bottle of your favorite wine!
+        What is the right way to hold it while pouring?</string>
+
+    <!-- Strings used in Q9 -->
+    <string name="question_09">Question 9</string>
+    <string name="question_09_text">Finally, having a glass of wine in your hands is yet not the
+        end of the game. What is the correct way to hold a glass of red wine?</string>
+    <string name="question_09_answer_A">by the bowl</string>
+    <string name="question_09_answer_B">by the stem</string>
+    <string name="question_09_answer_C">by the foot</string>
+    <string name="question_09_answer_D">by the stem or bowl</string>
+
+    <!-- Strings used in various questions -->
+    <string name="chooseAnswer">Choose an answer:</string>
+    <string name="chooseAnswer_layout_02">Enter your answer:</string>
+    <string name="chooseAnswer_layout_03">Choose correct answer(s):</string>
+
+    <!-- Strings used in Evaluation screen -->
+    <string name="evalScreen_01">This was the last question.</string>
+    <string name="evalScreen_02">"You scored "</string>
+    <string name="evalScreen_03">" out of 9 points."</string>
+    <string name="evalScreen_04_best">You are a true wine expert!</string>
+    <string name="evalScreen_04_medium">You are an aspiring sommelier!</string>
+    <string name="evalScreen_04_poorest">Well, you are an occasional wine lover.</string>
+    <string name="evalScreen_05">Thank you for taking the quiz. Santé!</string>
+
+    <!-- Toast messages -->
+    <!-- given in case user did not select an answer or selected an answer that is out of bounds -->
+    <string name="toastNoAnswerSelected">Please select an answer.</string>
+    <string name="toastNoAnswerSelected_02">Please select answer(s).</string>
+    <string name="toastNoAnswerEntered_01">Please enter a number between 0 and 20.</string>
+    <string name="toastNoAnswerEntered_02">Please enter a number between 0 and 60.</string>
+
+    <!-- given as feedback for an answer -->
+    <string name="correctAnswer">Correct!</string>
+    <string name="incorrectAnswer">Whoops, incorrect</string>
+
+    <!-- Strings used for buttons -->
+    <string name="buttonTextStartQuiz">Start quiz</string>
+    <string name="buttonTextRetryQuiz">Retry quiz</string>
+    <string name="buttonReadResources">Read more</string>
+    <string name="buttonTextSubmitAnswer">Submit answer</string>
+    <string name="buttonGoToStart">Start again</string>
+    <string name="closeApp">Close app</string>
+
+    <!-- Strings used in the additional reading material -->
+    <string name="introductoryText">This material will provide some broader knowledge. Enjoy!</string>
+    <string name="readMoreText">"Some common terms about wine.\n\n
+        Don’t feel compelled to use the following descriptions, although you certainly can as you gain more wine tasting experience. These are terms you will frequently encounter when discussing wine characteristics.\n\n
+        <b>acidity</b> \n\n
+        Acidity is the “sharpness” of a wine detected in your mouth. A wine that is too acidic may seem too sharp or harsh. One that is not acidic enough may seem dull. As a general rule, grapes grown in warm regions produce wines with lower acidity than wines from grapes grown in cooler climates.\n\n
+        <b>balance</b>\n\n
+        Balanced wines have a harmonious combination of acidity, flavor, texture and tannins. No one single element should stand out above the rest.\n\n
+        <b>body</b>\n\n
+        A wine’s body is the impact of the wine in your mouth. Wine with plenty of flavor, alcohol and tannin is a considered a full-bodied wine.\n\n
+        <b>bouquet</b>\n\n
+        The bouquet is the wine’s aroma.\n\n
+        <b>complexity</b>\n\n
+        Complex wines have a combination of richness, flavor, intensity, and balance. They are also said to have “depth”.\n\n
+        <b>crispness</b>\n\n
+        A crisp wine has proper acidity and taste, without excess sweetness.\n\n
+        <b>delicate</b>\n\n
+        Delicate wines are somewhat mild in bouquet, flavor and body.\n\n
+        <b>dryness</b>\n\n
+        A dry wine has very little or no sweetness; dry is the opposite of sweet. This term can also refer to the dry, puckering sensation in a drinker’s mouth caused by tannins. Residual sugar in the wine may give it a slight sweetness. These wines are described as off-dry or semi-dry.\n\n
+        <b>finish</b>\n\n
+        The wine’s taste immediately after it is swallowed is its finish. The aftertaste and aroma that remain after you have swallowed the wine is called its length. A long length is better than a short one."</string>
+    <string name="resourceMaterials"><b>Content of this quiz was prepared thanks to these resources:</b>\n
+        https://www.etiquettescholar.com\n
+        https://indibrownbeauty.wordpress.com\n
+        http://www.askmen.com\n
+        http://winefolly.com\n
+        http://cupofjo.com
+    </string>
+
+</resources>
+

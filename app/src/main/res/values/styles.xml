@@ -1,0 +1,119 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#d32f2f</item>
+        <item name="colorPrimaryDark">#b71c1c</item>
+        <item name="colorAccent">#ff1744</item>
+        <item name="colorButtonNormal">#ef9a9a</item>
+    </style>
+
+    <!-- Styles used for buttons -->
+    <style name="ButtonStyle_01">
+        <item name="android:layout_width">@dimen/controlButtonDimension_01</item>
+        <item name="android:layout_height">@dimen/controlButtonDimension_02</item>
+    </style>
+
+    <style name="ButtonStyle_02">
+        <item name="android:layout_width">@dimen/controlButtonDimension_01_land</item>
+        <item name="android:layout_height">@dimen/controlButtonDimension_02_land</item>
+    </style>
+
+    <!-- Styles used for ImageButtons -->
+    <style name="ImageButtonStyle_01">
+        <item name="android:layout_width">@dimen/answerButtonDimension_01</item>
+        <item name="android:layout_height">@dimen/answerButtonDimension_01</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="ImageButtonStyle_02">
+        <item name="android:layout_width">@dimen/answerButtonDimension_02</item>
+        <item name="android:layout_height">@dimen/answerButtonDimension_02</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Styles used for Images -->
+    <style name="ImageStyle_01">
+        <item name="android:layout_width">@dimen/imageViewSize</item>
+        <item name="android:layout_height">@dimen/imageViewSize</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="ImageStyle_02">
+        <item name="android:layout_width">@dimen/imageViewSize_02</item>
+        <item name="android:layout_height">@dimen/imageViewSize_02</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="ImageStyle_03">
+        <item name="android:layout_width">@dimen/imageViewSize_03</item>
+        <item name="android:layout_height">@dimen/imageViewSize_03</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Styles used for blank Views, which are then used for formatting -->
+    <style name="EmptyViewStyle">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="EmptyViewStyle.2">
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <!-- Styles used for RadioButtons -->
+    <style name="RadioButtonStyle_01" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/checkBoxMarginBetween</item>
+        <item name="android:paddingLeft">@dimen/checkBoxPadding</item>
+        <item name="android:paddingRight">@dimen/checkBoxPadding</item>
+    </style>
+
+    <!-- Styles used for CheckBoxes -->
+    <style name="CheckBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/checkBoxMarginBetween</item>
+        <item name="android:paddingLeft">@dimen/checkBoxPadding</item>
+    </style>
+
+    <style name="CheckBoxStyle.2">
+        <item name="android:paddingRight">@dimen/checkBoxPadding</item>
+    </style>
+
+    <style name="CheckBoxStyle_02">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/checkBoxMarginBetween_02</item>
+        <item name="android:paddingLeft">@dimen/checkBoxPadding</item>
+    </style>
+
+    <!-- Styles used for TextViews -->
+    <style name="TextViewStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textAppearance">@style/Theme.AppCompat.Light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/space_between_textViews</item>
+    </style>
+
+    <style name="TextViewStyle.2" >
+        <item name="android:layout_marginBottom">@dimen/space_between_textViews_02</item>
+    </style>
+
+    <style name="QuestionTextViewStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_of_question_text</item>
+        <item name="android:layout_marginBottom">@dimen/space_between_textViews</item>
+    </style>
+
+    <style name="QuestionTextViewStyle.2" >
+        <item name="android:layout_height">@dimen/height_of_question_text_landscape</item>
+    </style>
+
+    <style name="QuestionTextViewStyle.3" >
+        <item name="android:layout_height">@dimen/height_of_question_text_landscape_02</item>
+    </style>
+
+</resources>

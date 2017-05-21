@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/question_01_answer_pict_01_pressed"
+        android:state_pressed="true"/><!-- pressed state A button -->
+    <item android:drawable="@drawable/question_01_answer_pict_01"/><!-- default state -->
+
+    <item android:drawable="@drawable/question_01_answer_pict_02_pressed"
+        android:state_pressed="true"/><!-- pressed state B button -->
+    <item android:drawable="@drawable/question_01_answer_pict_02"/><!-- default state -->
+
+    <item android:drawable="@drawable/question_01_answer_pict_03_pressed"
+        android:state_pressed="true"/><!-- pressed state C button -->
+    <item android:drawable="@drawable/question_01_answer_pict_03"/><!-- default state -->
+
+    <item android:drawable="@drawable/question_01_answer_pict_04_pressed"
+        android:state_pressed="true"/><!-- pressed state D button -->
+    <item android:drawable="@drawable/question_01_answer_pict_04"/><!-- default state -->
+</selector>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.winequiz.Evaluation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/evalScreen_01"
+                android:textSize="@dimen/font_size_of_mainScreen_text_02" />
+
+            <TextView
+                android:id="@+id/evalScreenScoreMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_between_textViews"
+                android:text="@string/evalScreen_02" />
+
+            <TextView
+                android:id="@+id/evalScreenScoreMessage_02"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_between_textViews_03"
+                android:text="@string/evalScreen_04_best"
+                android:textSize="@dimen/font_size_of_mainScreen_text_02" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/evalScreen_05"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_size_of_mainScreen_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/evalScreenPicture"
+                style="@style/ImageStyle_02"
+                android:background="@drawable/evaluation_01" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/startQuizButton"
+            style="@style/ButtonStyle_02"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="goToQuestionOne"
+            android:text="@string/buttonTextRetryQuiz" />
+
+        <Button
+            android:id="@+id/readMoreButton"
+            style="@style/ButtonStyle_02"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="goToReadingMaterial"
+            android:text="@string/buttonReadResources" />
+
+        <Button
+            android:id="@+id/closeAppButton"
+            style="@style/ButtonStyle_02"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="closeApp"
+            android:text="@string/closeApp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

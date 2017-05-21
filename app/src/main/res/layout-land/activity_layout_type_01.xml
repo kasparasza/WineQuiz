@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_layout_type_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.winequiz.Question_01">
+
+    <TextView
+        android:id="@+id/questionNumber_Layout_type_01"
+        style="@style/TextViewStyle"
+        android:text="@string/question_01" />
+
+    <TextView
+        android:id="@+id/questionText_Layout_type_01"
+        style="@style/QuestionTextViewStyle.2"
+        android:text="@string/question_01_text" />
+
+    <TextView
+        android:id="@+id/answer_Layout_type_01"
+        style="@style/TextViewStyle"
+        android:text="@string/chooseAnswer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View style="@style/EmptyViewStyle" />
+
+        <ImageButton
+            android:id="@+id/answerOptionA_Layout_type_01"
+            style="@style/ImageButtonStyle_02"
+            android:background="@drawable/image_button_state_list"
+            android:onClick="selectAnswerOption" />
+
+        <View style="@style/EmptyViewStyle" />
+
+        <ImageButton
+            android:id="@+id/answerOptionB_Layout_type_01"
+            style="@style/ImageButtonStyle_02"
+            android:background="@drawable/question_01_answer_pict_02"
+            android:onClick="selectAnswerOption" />
+
+        <View style="@style/EmptyViewStyle" />
+
+        <ImageButton
+            android:id="@+id/answerOptionC_Layout_type_01"
+            style="@style/ImageButtonStyle_02"
+            android:background="@drawable/question_01_answer_pict_03"
+            android:onClick="selectAnswerOption" />
+
+        <View style="@style/EmptyViewStyle" />
+
+        <ImageButton
+            android:id="@+id/answerOptionD_Layout_type_01"
+            style="@style/ImageButtonStyle_02"
+            android:background="@drawable/question_01_answer_pict_04"
+            android:onClick="selectAnswerOption" />
+
+        <View style="@style/EmptyViewStyle" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/goToStartButton_Layout_type_01"
+            style="@style/ButtonStyle_02"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_between_textViews"
+            android:onClick="goToStartOfApp"
+            android:text="@string/buttonGoToStart" />
+
+        <Button
+            android:id="@+id/submitButton_Layout_type_01"
+            style="@style/ButtonStyle_02"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/space_between_textViews"
+            android:onClick="changeQuestion"
+            android:text="@string/buttonTextSubmitAnswer" />
+
+    </RelativeLayout>
+</LinearLayout>

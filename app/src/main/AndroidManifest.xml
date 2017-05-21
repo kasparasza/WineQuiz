@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.winequiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Question_01"></activity>
+        <activity android:name=".Question_02"></activity>
+        <activity android:name=".Question_03"></activity>
+        <activity android:name=".Question_04"></activity>
+        <activity android:name=".Question_05"></activity>
+        <activity android:name=".Question_06"></activity>
+        <activity android:name=".Question_07"></activity>
+        <activity android:name=".Question_08"></activity>
+        <activity android:name=".Question_09"></activity>
+        <activity android:name=".Evaluation"></activity>
+        <activity android:name=".ReadMore"></activity>
+    </application>
+
+</manifest>

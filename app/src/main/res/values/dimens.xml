@@ -1,0 +1,39 @@
+<resources>
+    <!-- Screen margins -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+
+    <!-- Dimensions of TextViews & text font-->
+    <dimen name="space_between_textViews">8dp</dimen>
+    <dimen name="space_between_textViews_02">4dp</dimen>
+    <dimen name="space_between_textViews_03">24dp</dimen>
+    <dimen name="height_of_question_text">52dp</dimen>
+    <dimen name="font_size_of_mainScreen_text">24sp</dimen>
+    <dimen name="font_size_of_mainScreen_text_02">16sp</dimen>
+
+    <!-- Dimensions of EditText view -->
+    <dimen name="editTextLength">176dp</dimen>
+
+    <!-- Dimensions of CheckBoxes -->
+    <dimen name="checkBoxPadding">8dp</dimen>
+    <dimen name="checkBoxMarginBetween">-8dp</dimen>
+    <dimen name="checkBoxMarginBetween_02">8dp</dimen>
+
+    <!-- Dimensions of ImageViews view -->
+    <!-- Portrait layout -->
+    <dimen name="imageViewSize">256dp</dimen>
+    <dimen name="imageViewSize_02">216dp</dimen>
+    <dimen name="imageViewSize_03">244dp</dimen>
+
+    <!-- Dimensions of answer option buttons. -->
+    <dimen name="answerButtonDimension_01">144dp</dimen>
+    <dimen name="answerButtonDimension_02">120dp</dimen>
+    <dimen name="answerButtonMargin_01">16dp</dimen>
+
+    <!-- Dimensions of control buttons -->
+    <!-- Portrait layout -->
+    <dimen name="controlButtonDimension_01">128dp</dimen>
+    <dimen name="controlButtonDimension_02">56dp</dimen>
+    <dimen name="controlButtonMargin">16dp</dimen>
+
+</resources>
