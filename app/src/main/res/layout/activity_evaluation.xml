@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -11,94 +11,100 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.winequiz.Evaluation">
 
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/TextAppearance.AppCompat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/evalScreen_01"
-        android:textAlignment="center"
-        android:textSize="@dimen/font_size_of_mainScreen_text_02" />
-
-    <TextView
-        android:id="@+id/evalScreenScoreMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/space_between_textViews"
-        android:text="@string/evalScreen_02"
-        android:textAlignment="center" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <View style="@style/EmptyViewStyle" />
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/evalScreen_01"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_size_of_mainScreen_text_02" />
 
-        <ImageView
-            android:id="@+id/evalScreenPicture"
-            style="@style/ImageStyle_01"
-            android:background="@drawable/evaluation_01" />
-
-        <View style="@style/EmptyViewStyle" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/evalScreenScoreMessage_02"
-        style="@style/TextViewStyle"
-        android:text="@string/evalScreen_04_best"
-        android:textAlignment="center"
-        android:textSize="@dimen/font_size_of_mainScreen_text_02" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/evalScreenScoreMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_between_textViews"
+            android:text="@string/evalScreen_02"
+            android:textAlignment="center" />
 
         <LinearLayout
-            android:layout_width="1dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/startQuizButton"
-                style="@style/ButtonStyle_01"
-                android:onClick="goToQuestionOne"
-                android:text="@string/buttonTextRetryQuiz" />
+            <View style="@style/EmptyViewStyle" />
 
-            <Button
-                android:id="@+id/readMoreButton"
-                style="@style/ButtonStyle_01"
-                android:onClick="goToReadingMaterial"
-                android:text="@string/buttonReadResources" />
+            <ImageView
+                android:id="@+id/evalScreenPicture"
+                style="@style/ImageStyle_01"
+                android:background="@drawable/evaluation_01" />
 
-            <Button
-                android:id="@+id/closeAppButton"
-                style="@style/ButtonStyle_01"
-                android:onClick="closeApp"
-                android:text="@string/closeApp" />
+            <View style="@style/EmptyViewStyle" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1">
+        <TextView
+            android:id="@+id/evalScreenScoreMessage_02"
+            style="@style/TextViewStyle"
+            android:text="@string/evalScreen_04_best"
+            android:textAlignment="center"
+            android:textSize="@dimen/font_size_of_mainScreen_text_02" />
 
-            <TextView
-                style="@style/TextAppearance.AppCompat"
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="1dp"
                 android:layout_height="wrap_content"
-                android:text="@string/evalScreen_05"
-                android:textAlignment="center"
-                android:textSize="@dimen/font_size_of_mainScreen_text" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/startQuizButton"
+                    style="@style/ButtonStyle_01"
+                    android:onClick="goToQuestionOne"
+                    android:text="@string/buttonTextRetryQuiz" />
+
+                <Button
+                    android:id="@+id/readMoreButton"
+                    style="@style/ButtonStyle_01"
+                    android:onClick="goToReadingMaterial"
+                    android:text="@string/buttonReadResources" />
+
+                <Button
+                    android:id="@+id/closeAppButton"
+                    style="@style/ButtonStyle_01"
+                    android:onClick="closeApp"
+                    android:text="@string/closeApp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/evalScreen_05"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/font_size_of_mainScreen_text" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

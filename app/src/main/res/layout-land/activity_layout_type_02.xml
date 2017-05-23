@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_layout_type_01"
     android:layout_width="match_parent"
@@ -14,77 +14,83 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="1dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/questionNumber_Layout_type_02"
-                style="@style/TextViewStyle"
-                android:text="@string/question_03" />
-
-            <TextView
-                android:id="@+id/questionText_Layout_type_02"
-                style="@style/QuestionTextViewStyle.3"
-                android:text="@string/question_03_text" />
-
-            <TextView
-                android:id="@+id/answer_Layout_type_02"
-                style="@style/TextViewStyle"
-                android:text="@string/chooseAnswer_layout_02" />
-
-            <EditText
-                android:id="@+id/answerEntered_Layout_type_02"
-                style="@style/TextAppearance.AppCompat"
-                android:layout_width="@dimen/editTextLength"
+            <LinearLayout
+                android:layout_width="1dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/colorOfEditText"
-                android:hint="@string/editTextHint_Q3"
-                android:inputType="number"
-                android:maxLength="5" />
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/questionNumber_Layout_type_02"
+                    style="@style/TextViewStyle"
+                    android:text="@string/question_03" />
+
+                <TextView
+                    android:id="@+id/questionText_Layout_type_02"
+                    style="@style/QuestionTextViewStyle.3"
+                    android:text="@string/question_03_text" />
+
+                <TextView
+                    android:id="@+id/answer_Layout_type_02"
+                    style="@style/TextViewStyle"
+                    android:text="@string/chooseAnswer_layout_02" />
+
+                <EditText
+                    android:id="@+id/answerEntered_Layout_type_02"
+                    style="@style/TextAppearance.AppCompat"
+                    android:layout_width="@dimen/editTextLength"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorOfEditText"
+                    android:hint="@string/editTextHint_Q3"
+                    android:inputType="number"
+                    android:maxLength="5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/picture_Layout_type_02"
+                    style="@style/ImageStyle_02"
+                    android:background="@drawable/question_03_picture" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/picture_Layout_type_02"
-                style="@style/ImageStyle_02"
-                android:background="@drawable/question_03_picture" />
+            <Button
+                android:id="@+id/goToStartButton_Layout_type_02"
+                style="@style/ButtonStyle_02"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/space_between_textViews"
+                android:onClick="goToStartOfApp"
+                android:text="@string/buttonGoToStart" />
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/submitButton_Layout_type_02"
+                style="@style/ButtonStyle_02"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/space_between_textViews"
+                android:onClick="checkAnswer"
+                android:text="@string/buttonTextSubmitAnswer" />
+        </RelativeLayout>
 
     </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/goToStartButton_Layout_type_02"
-            style="@style/ButtonStyle_02"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="@dimen/space_between_textViews"
-            android:onClick="goToStartOfApp"
-            android:text="@string/buttonGoToStart" />
-
-        <Button
-            android:id="@+id/submitButton_Layout_type_02"
-            style="@style/ButtonStyle_02"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="@dimen/space_between_textViews"
-            android:onClick="checkAnswer"
-            android:text="@string/buttonTextSubmitAnswer" />
-    </RelativeLayout>
-
-</LinearLayout>
+</ScrollView>

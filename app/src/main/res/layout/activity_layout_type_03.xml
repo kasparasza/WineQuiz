@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_layout_type_01"
     android:layout_width="match_parent"
@@ -11,104 +11,110 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.winequiz.Question_04">
 
-    <TextView
-        android:id="@+id/questionNumber_Layout_type_03"
-        style="@style/TextViewStyle"
-        android:text="@string/question_04" />
-
-    <TextView
-        android:id="@+id/questionText_Layout_type_03"
-        style="@style/QuestionTextViewStyle"
-        android:text="@string/question_04_text" />
-
-    <TextView
-        android:id="@+id/answer_Layout_type_03"
-        style="@style/TextViewStyle"
-        android:text="@string/chooseAnswer_layout_03" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questionNumber_Layout_type_03"
+            style="@style/TextViewStyle"
+            android:text="@string/question_04" />
+
+        <TextView
+            android:id="@+id/questionText_Layout_type_03"
+            style="@style/QuestionTextViewStyle"
+            android:text="@string/question_04_text" />
+
+        <TextView
+            android:id="@+id/answer_Layout_type_03"
+            style="@style/TextViewStyle"
+            android:text="@string/chooseAnswer_layout_03" />
 
         <LinearLayout
-            android:layout_width="1dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space_between_textViews"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/answerOptionA_Layout_type_03"
-                style="@style/CheckBoxStyle"
-                android:text="@string/question_04_answer_A" />
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_between_textViews"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/answerOptionB_Layout_type_03"
-                style="@style/CheckBoxStyle_02"
-                android:text="@string/question_04_answer_B" />
+                <CheckBox
+                    android:id="@+id/answerOptionA_Layout_type_03"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/question_04_answer_A" />
+
+                <CheckBox
+                    android:id="@+id/answerOptionB_Layout_type_03"
+                    style="@style/CheckBoxStyle_02"
+                    android:text="@string/question_04_answer_B" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_between_textViews"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/answerOptionC_Layout_type_03"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/question_04_answer_C" />
+
+                <CheckBox
+                    android:id="@+id/answerOptionD_Layout_type_03"
+                    style="@style/CheckBoxStyle_02"
+                    android:text="@string/question_04_answer_D" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="1dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space_between_textViews"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/answerOptionC_Layout_type_03"
-                style="@style/CheckBoxStyle"
-                android:text="@string/question_04_answer_C" />
+            <View style="@style/EmptyViewStyle" />
 
-            <CheckBox
-                android:id="@+id/answerOptionD_Layout_type_03"
-                style="@style/CheckBoxStyle_02"
-                android:text="@string/question_04_answer_D" />
+            <ImageView
+                android:id="@+id/picture_Layout_type_03"
+                style="@style/ImageStyle_03"
+                android:background="@drawable/question_04_picture" />
+
+            <View style="@style/EmptyViewStyle" />
 
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/goToStartButton_Layout_type_03"
+                style="@style/ButtonStyle_01"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/space_between_textViews"
+                android:onClick="goToStartOfApp"
+                android:text="@string/buttonGoToStart" />
+
+            <Button
+                android:id="@+id/submitButton_Layout_type_03"
+                style="@style/ButtonStyle_01"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/space_between_textViews"
+                android:onClick="checkAnswer"
+                android:text="@string/buttonTextSubmitAnswer" />
+
+        </RelativeLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <View style="@style/EmptyViewStyle" />
-
-        <ImageView
-            android:id="@+id/picture_Layout_type_03"
-            style="@style/ImageStyle_03"
-            android:background="@drawable/question_04_picture" />
-
-        <View style="@style/EmptyViewStyle" />
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/goToStartButton_Layout_type_03"
-            style="@style/ButtonStyle_01"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="@dimen/space_between_textViews"
-            android:onClick="goToStartOfApp"
-            android:text="@string/buttonGoToStart" />
-
-        <Button
-            android:id="@+id/submitButton_Layout_type_03"
-            style="@style/ButtonStyle_01"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="@dimen/space_between_textViews"
-            android:onClick="checkAnswer"
-            android:text="@string/buttonTextSubmitAnswer" />
-
-    </RelativeLayout>
-</LinearLayout>
+</ScrollView>
 
